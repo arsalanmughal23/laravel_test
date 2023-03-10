@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('user-profile', [UserController::class, 'index'])->name('user.profile');
+Route::get('user-profile_image', [UserController::class, 'profileImage'])->name('user.profile_image');
