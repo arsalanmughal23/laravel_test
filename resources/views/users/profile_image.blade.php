@@ -25,7 +25,7 @@
             </div>
 
             <div class="col-sm-2">
-                <img class="img-circle" id="avatar-edit-img" height="128" data-src="{{ asset('assets/img/download.png') }}" data-holder-rendered="true" style="width: 140px; height: 140px;" src="{{ asset('assets/img/download.png') }}">
+                <img class="img-circle" id="avatar-edit-img" height="128" data-src="{{ asset('assets/img/avatar1.png') }}" data-holder-rendered="true" style="width: 140px; height: 140px;" src="{{ asset('assets/img/avatar1.png') }}">
             </div>
             <div class="col-sm-10">
                 <a type="button" class="btn btn-primary" id="change-pic">Change Image</a>
