@@ -18,5 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('user-profile', [UserController::class, 'index'])->name('user.profile');
-Route::get('user-profile_image', [UserController::class, 'profileImage'])->name('user.profile_image');
+Route::get('user-profile-v1', [UserController::class, 'index'])->name('user.profile_v1');
+Route::get('user-profile', [UserController::class, 'profile'])->name('user.profile');
+Route::post('user-profile-update', [UserController::class, 'profileUpdate'])->name('user.profile_update');
+Route::get('user-search', [UserController::class, 'searchUsers'])->name('user.search');

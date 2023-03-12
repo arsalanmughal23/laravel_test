@@ -18,14 +18,24 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .btn {
+                padding: 5px 10px;
+                border-radius: 5px;
+                background: cornflowerblue;
+                color: white;
+            }
+            .btn:hover {
+                border: 1px solid blue !important;
+            }
+
         </style>
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 
-                <a href="{{ route('user.profile') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Profile</a>
-                <a href="{{ route('user.profile_image') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Profile Image</a>
+                <a href="{{ route('user.profile_v1') }}" class="btn text-sm text-gray-700 dark:text-gray-500 underline">Education Add-More</a>
+                <a href="{{ route('user.profile') }}" class="btn text-sm text-gray-700 dark:text-gray-500 underline">Profile</a>
     
                 @if (Route::has('login'))
                     @auth
